@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+  padding: 10px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.list {
+  padding: 10px;
+  list-style: none;
+}
+
+.todo-add {
+  text-align: center;
+}
+.todo-add input[type='text'] {
+  height: 40px;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #d2d2d2;
+  margin-top: 15px;
+}
+.todo-add input[type='text']:focus::placeholder {
+    opacity: 0;
+}
+
+.list li {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  text-align: left;
+  border-bottom: 1px #e4e4e4 solid;
+  margin: 0 0 10px 0
+}
+
+.list li:hover{
+  background-color: #e4e4e4;
+}
+.list li button{
+  box-sizing: border-box;
+  position: absolute;
+  right: 20px;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.tab {
+  max-height: calc(100vh - 300px);
+  overflow: auto;
+}
